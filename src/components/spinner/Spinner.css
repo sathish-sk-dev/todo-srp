@@ -1,0 +1,55 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  inline-size: 24px;
+  block-size: 24px;
+  border-radius: 24px;
+  box-sizing: border-box;
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    rgb(39 174 96 / 0%) 0deg,
+    rgb(31 144 255 / 0%) 0.04deg,
+    #3ae180 360deg
+  );
+  animation: 1s rotate infinite linear;
+}
+
+.spinner::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  block-size: 20px;
+  inline-size: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.spinner::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  block-size: 2px;
+  inline-size: 2px;
+  background: #3ae180;
+  border-radius: 2px;
+}

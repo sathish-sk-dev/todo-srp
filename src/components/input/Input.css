@@ -1,0 +1,32 @@
+.input-container {
+  display: flex;
+  width: calc(100% - 100px);
+  padding: 10px 8px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid #6a1ca6;
+  box-shadow:
+    0px 2px 2px -2px rgba(0, 0, 0, 0.12),
+    0px 0px 0px 2px rgba(106, 28, 166, 0.08);
+}
+
+input {
+  border: none;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.count {
+  color: black;
+  font-size: 14px;
+  display: flex;
+  margin-left: 4px;
+}
+
+.limit {
+  color: #8c8c8c;
+}

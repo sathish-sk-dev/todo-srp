@@ -1,0 +1,19 @@
+.inline-edit-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+}
+
+.inline-label {
+  height: 100%;
+  padding: 10px 14px;
+  text-align: left;
+  width: calc(100% - 48px);
+}
+
+.inline-label:hover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+}

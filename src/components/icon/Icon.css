@@ -1,0 +1,14 @@
+.icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container-disabled {
+  opacity: 0.5;
+}
